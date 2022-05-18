@@ -151,6 +151,7 @@ int SMTX_print(SMatrixType A[])
     {
         for(i=1; i<=v; i++)
         {
+            // TODO
             printf("%2d, %2d, %2d\n",A->R[i].row,A->R[i].col, A->R[i].value);
         // TODO
     }
