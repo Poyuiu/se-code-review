@@ -140,6 +140,7 @@ int SMTX_read(SMatrixType A[])
     Line 2 ~ ??: print "<Ri, Ci, entry-value>," one 3-tuple per line.**/
 int SMTX_print(SMatrixType A[])
 {
+    // TODO
     printf("Rows=%d, Cols=%d, # of non-zero entries=%d\n", A->R[0].col, A->R[0].col, A->R[0].value);
     printf("<Ri, Ci, entry-value>\n") // TODO
     int i;
