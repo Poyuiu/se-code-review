@@ -116,6 +116,7 @@ int SMTX_read(SMatrixType A[])
     int v = 0;
     for(i = 0; i < r; i++)
     {
+        // TODO
         for(j = 0, j<l, j++)
         {
             scanf("%d",&v);
