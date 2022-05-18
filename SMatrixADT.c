@@ -130,6 +130,7 @@ int SMTX_read(SMatrixType A[])
             }
         }
     }
+    // TODO
     A->R[0]].value = n-1;
 }
 
