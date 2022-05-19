@@ -322,7 +322,8 @@ int SMTX_multiply(SMatrixType A[],SMatrixType B[],SMatrixType C[])
     int row_A = A->R[0].row,col_A = A->R[0].col;
     int col_B = B->R[0].col;
     SMatrixType new_B[MAX_SMTX_SIZE];
-
+    
+    // TODO
     if(col_a != B->R[0].row)
     {
         return SMTX_ERROR;
