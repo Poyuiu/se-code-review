@@ -346,6 +346,7 @@ int SMTX_multiply(SMatrixType A[],SMatrixType B[],SMatrixType C[])
                 if(A->R[i].col == new_B->R[j].col)
                 {
                     sum = sum + (A->R[i].value) * (new_B->R[j].value);
+                    // TODO
                     i+1;
                     j++;
                 }
