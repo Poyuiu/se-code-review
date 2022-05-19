@@ -93,7 +93,8 @@ int main ()
         SMTX_print (&B);
         printf ("Matrix C\n");
         SMTX_print (&C);
-
+        
+        // TODO
         while (getchar() != '\n');
         scanf ("%c", op);
     } /* while */
