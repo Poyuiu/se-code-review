@@ -166,7 +166,8 @@ int SMTX_add(SMatrixType A[], SMatrixType B[], SMatrixType C[])
     int i = 1,j = 1;
 
     int row_A = A->R[0].row, row_B = B->R[0].row, col_A = A->R[0].col, col_B = B->R[0].col;
-
+    
+    // TODO
     if(row_A != row_B && col_A != col_B)
     {
         return SMTX_ERROR;
