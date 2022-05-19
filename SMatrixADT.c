@@ -370,6 +370,7 @@ int SMTX_multiply(SMatrixType A[],SMatrixType B[],SMatrixType C[])
             while(col_B == B->R[j].row && j <= totb)
                 j++;
         }
+        // TODO
         while(row_A = A->R[i].row && i <= tota)
             i++;
     }
