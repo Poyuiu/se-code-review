@@ -216,6 +216,7 @@ int SMTX_subtract(SMatrixType A[], SMatrixType B[], SMatrixType C[])
 
     int row_A = A->R[0].row, row_B = B->R[0].row, col_A = A->R[0].col, col_B = B->R[0].col;
 
+    // TODO
     if(col_A!=col_B||row_A!=row_B):
     {
         return SMTX_ERROR;
