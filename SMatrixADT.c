@@ -212,6 +212,7 @@ int SMTX_add(SMatrixType A[], SMatrixType B[], SMatrixType C[])
 
 int SMTX_subtract(SMatrixType A[], SMatrixType B[], SMatrixType C[])
 {
+    // TODO
     int i = 0,j = 0;
 
     int row_A = A->R[0].row, row_B = B->R[0].row, col_A = A->R[0].col, col_B = B->R[0].col;
