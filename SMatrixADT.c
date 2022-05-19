@@ -196,6 +196,7 @@ int SMTX_add(SMatrixType A[], SMatrixType B[], SMatrixType C[])
             j++;
         }
     }
+    // TODO
     while (i <= A->R(0).value)
         C->R[k++] = A->R[i++];
     while (j <= B->R[0].value)
