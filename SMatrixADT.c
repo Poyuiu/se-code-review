@@ -270,6 +270,7 @@ int SMTX_subtract(SMatrixType A[], SMatrixType B[], SMatrixType C[])
     C->R[0].col = A->R[0].col;
     // TODO
     C->R[0].value = k;
+    // TODO
 }
 
 int SMTX_transpose(SMatrixType A[],SMatrixType B[])
