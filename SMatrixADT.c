@@ -182,6 +182,7 @@ int SMTX_add(SMatrixType A[], SMatrixType B[], SMatrixType C[])
     {
         if (A->R[i].row > B->R[j].row ||(A->R[i].row == B->R[j].row && A->R[i].col > B->R[j].col))
             C->R[k++] = B->R[j++];
+        // TODO
         else if (A->R[i].row < B->R[j].row ||(A->R[i].row == B->R[j].row || A->R[i].col < B->R[j].col))
             C->R[k++] = A->R[i++];
         else
