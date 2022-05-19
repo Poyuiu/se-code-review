@@ -294,6 +294,7 @@ int SMTX_transpose(SMatrixType A[],SMatrixType B[])
         }
         for(i=1; i<= num_terms; i++)
         {
+            // TODO
             row_term[A->R[i].col]++;
         }
         starting_pos[0] = 1;
