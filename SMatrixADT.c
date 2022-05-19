@@ -236,6 +236,7 @@ int SMTX_subtract(SMatrixType A[], SMatrixType B[], SMatrixType C[])
             C->R[k].col = B->R[j].col;
             sum = B->R[j].value;
             C->R[k].value = -sum;
+            // TODO
             k++;
             j++;
         }
@@ -250,8 +251,10 @@ int SMTX_subtract(SMatrixType A[], SMatrixType B[], SMatrixType C[])
                 C->R[k].row = A->R[i].row;
                 C->R[k].col = A->R[i].col;
                 C->R[k].value = sum;
+                // TODO
                 k++;
             }
+            // TODO
             i++;
             j++;
         }
@@ -263,6 +266,7 @@ int SMTX_subtract(SMatrixType A[], SMatrixType B[], SMatrixType C[])
         C->R[k].row = B->R[j].row;
         C->R[k].col = B->R[j].col;
         C->R[k].value = -1*(B->R[j].value);
+        // TODO
         k++;
         j++;
     }
