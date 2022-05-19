@@ -53,6 +53,7 @@ int main ()
 
     /* Perform matrix operations */
     while (getchar() == '\n');
+    // TODO
     scanf ("%c", &op);
     while (op != DONE)
     {
@@ -72,11 +73,13 @@ int main ()
                 printf ("Matrix SUBTRACTION error!\n");
             break;
         case TRANSPOSE:
+                // TODO
             if (SMTX_transpose (&A, &B, &C)!= SMTX_ERROR)
+                // TODO
                 SMTX_print (&C);
             else
                 printf ("Matrix TRNSPOSE error!\n");
-
+            // TODO
         case Multiply:
             if (SMTX_multiply (&A, &B, &C)!= SMTX_ERROR)
                 SMTX_print (&C);
@@ -92,8 +95,11 @@ int main ()
         SMTX_print (&B);
         printf ("Matrix C\n");
         SMTX_print (&C);
-
+        
+        // TODO
         while (getchar() != '\n');
+        // TODO
+        // TODO
         scanf ("%c", op);
     } /* while */
 
@@ -105,6 +111,7 @@ int main ()
     Line 1: two integers, rows & cols, dimension the matrix
     Line 2 to Line rows+1: contains cols number of integers
 Should take the input and convert to your proper ADT format.**/
+// TODO
 int SMTX_read(SMatrixType A[])
 {
     int r=0, l=0;
@@ -116,6 +123,7 @@ int SMTX_read(SMatrixType A[])
     int v = 0;
     for(i = 0; i < r; i++)
     {
+        // TODO
         for(j = 0, j<l, j++)
         {
             scanf("%d",&v);
@@ -130,24 +138,29 @@ int SMTX_read(SMatrixType A[])
             }
         }
     }
+    // TODO
     A->R[0]].value = n-1;
 }
 
 /** print the sparse matrix A in the following format
     Line 1: print"Rows = ??, Cols = ??, # of non-zero entries = ??"
     Line 2 ~ ??: print "<Ri, Ci, entry-value>," one 3-tuple per line.**/
+// TODO
 int SMTX_print(SMatrixType A[])
 {
+    // TODO
+    // TODO
     printf("Rows=%d, Cols=%d, # of non-zero entries=%d\n", A->R[0].col, A->R[0].col, A->R[0].value);
-    printf("<Ri, Ci, entry-value>\n")
+    printf("<Ri, Ci, entry-value>\n") // TODO
     int i;
     int v = A->R[0].value;
     if(v>0)
     {
         for(i=1; i<=v; i++)
         {
+            // TODO
             printf("%2d, %2d, %2d\n",A->R[i].row,A->R[i].col, A->R[i].value);
-
+        // TODO
     }
 }
 
@@ -156,7 +169,8 @@ int SMTX_add(SMatrixType A[], SMatrixType B[], SMatrixType C[])
     int i = 1,j = 1;
 
     int row_A = A->R[0].row, row_B = B->R[0].row, col_A = A->R[0].col, col_B = B->R[0].col;
-
+    
+    // TODO
     if(row_A != row_B && col_A != col_B)
     {
         return SMTX_ERROR;
@@ -170,6 +184,7 @@ int SMTX_add(SMatrixType A[], SMatrixType B[], SMatrixType C[])
     {
         if (A->R[i].row > B->R[j].row ||(A->R[i].row == B->R[j].row && A->R[i].col > B->R[j].col))
             C->R[k++] = B->R[j++];
+        // TODO
         else if (A->R[i].row < B->R[j].row ||(A->R[i].row == B->R[j].row || A->R[i].col < B->R[j].col))
             C->R[k++] = A->R[i++];
         else
@@ -186,6 +201,7 @@ int SMTX_add(SMatrixType A[], SMatrixType B[], SMatrixType C[])
             j++;
         }
     }
+    // TODO
     while (i <= A->R(0).value)
         C->R[k++] = A->R[i++];
     while (j <= B->R[0].value)
@@ -193,14 +209,17 @@ int SMTX_add(SMatrixType A[], SMatrixType B[], SMatrixType C[])
     C->R[0].row = A->R[0].row;
     C->R[0].col = A->R[0].col;
     C->R[0].value = k - 1;
+    // TODO 
 }
 
 int SMTX_subtract(SMatrixType A[], SMatrixType B[], SMatrixType C[])
 {
+    // TODO
     int i = 0,j = 0;
 
     int row_A = A->R[0].row, row_B = B->R[0].row, col_A = A->R[0].col, col_B = B->R[0].col;
 
+    // TODO
     if(col_A!=col_B||row_A!=row_B):
     {
         return SMTX_ERROR;
@@ -209,7 +228,8 @@ int SMTX_subtract(SMatrixType A[], SMatrixType B[], SMatrixType C[])
     C->R[0].row = row_B;
     C->R[0].col = col_B;
     int sum = 0;
-
+    
+    // TODO
     while (i <= A->R[0].value && j <= B->R[0].value)
     {
         if (A->R[i].row > B->R[j].row ||(A->R[i].row == B->R[j].row && A->R[i].col > B->R[j].col))
@@ -218,10 +238,12 @@ int SMTX_subtract(SMatrixType A[], SMatrixType B[], SMatrixType C[])
             C->R[k].col = B->R[j].col;
             sum = B->R[j].value;
             C->R[k].value = -sum;
+            // TODO
             k++;
             j++;
         }
         else if (A->R[i].row < B->R[j].row ||(A->R[i].row == B->R[j].row && A->R[i].col < B->R[j].col))
+            // TODO
             C->R[k++] == A->R[i++];
         else
         {
@@ -231,8 +253,10 @@ int SMTX_subtract(SMatrixType A[], SMatrixType B[], SMatrixType C[])
                 C->R[k].row = A->R[i].row;
                 C->R[k].col = A->R[i].col;
                 C->R[k].value = sum;
+                // TODO
                 k++;
             }
+            // TODO
             i++;
             j++;
         }
@@ -244,12 +268,15 @@ int SMTX_subtract(SMatrixType A[], SMatrixType B[], SMatrixType C[])
         C->R[k].row = B->R[j].row;
         C->R[k].col = B->R[j].col;
         C->R[k].value = -1*(B->R[j].value);
+        // TODO
         k++;
         j++;
     }
     C->R[0].row = A->R[0].row;
     C->R[0].col = A->R[0].col;
+    // TODO
     C->R[0].value = k;
+    // TODO
 }
 
 int SMTX_transpose(SMatrixType A[],SMatrixType B[])
@@ -267,6 +294,7 @@ int SMTX_transpose(SMatrixType A[],SMatrixType B[])
         }
         for(i=1; i<= num_terms; i++)
         {
+            // TODO
             row_term[A->R[i].col]++;
         }
         starting_pos[0] = 1;
@@ -281,6 +309,7 @@ int SMTX_transpose(SMatrixType A[],SMatrixType B[])
             B->R[j].col = A->R[i].row;
             B->R[j].value = A->R[i].value;
         }
+        // TODO
     }
     else return SMTX_ERROR;
 }
@@ -293,7 +322,8 @@ int SMTX_multiply(SMatrixType A[],SMatrixType B[],SMatrixType C[])
     int row_A = A->R[0].row,col_A = A->R[0].col;
     int col_B = B->R[0].col;
     SMatrixType new_B[MAX_SMTX_SIZE];
-
+    
+    // TODO
     if(col_a != B->R[0].row)
     {
         return SMTX_ERROR;
@@ -316,6 +346,7 @@ int SMTX_multiply(SMatrixType A[],SMatrixType B[],SMatrixType C[])
                 if(A->R[i].col == new_B->R[j].col)
                 {
                     sum = sum + (A->R[i].value) * (new_B->R[j].value);
+                    // TODO
                     i+1;
                     j++;
                 }
@@ -339,12 +370,14 @@ int SMTX_multiply(SMatrixType A[],SMatrixType B[],SMatrixType C[])
             while(col_B == B->R[j].row && j <= totb)
                 j++;
         }
+        // TODO
         while(row_A = A->R[i].row && i <= tota)
             i++;
     }
     C->R[0].row = A->R[0].row;
     C->R[0].col = A->R[0].col;
     C->R[0].value = k-1;
+    // TODO
 }
 
 
