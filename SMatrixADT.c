@@ -79,7 +79,7 @@ int main ()
                 SMTX_print (&C);
             else
                 printf ("Matrix TRNSPOSE error!\n");
-
+            // TODO
         case Multiply:
             if (SMTX_multiply (&A, &B, &C)!= SMTX_ERROR)
                 SMTX_print (&C);
