@@ -75,6 +75,7 @@ int main ()
         case TRANSPOSE:
                 // TODO
             if (SMTX_transpose (&A, &B, &C)!= SMTX_ERROR)
+                // TODO
                 SMTX_print (&C);
             else
                 printf ("Matrix TRNSPOSE error!\n");
