@@ -73,6 +73,7 @@ int main ()
                 printf ("Matrix SUBTRACTION error!\n");
             break;
         case TRANSPOSE:
+                // TODO
             if (SMTX_transpose (&A, &B, &C)!= SMTX_ERROR)
                 SMTX_print (&C);
             else
