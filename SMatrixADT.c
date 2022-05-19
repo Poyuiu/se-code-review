@@ -309,6 +309,7 @@ int SMTX_transpose(SMatrixType A[],SMatrixType B[])
             B->R[j].col = A->R[i].row;
             B->R[j].value = A->R[i].value;
         }
+        // TODO
     }
     else return SMTX_ERROR;
 }
