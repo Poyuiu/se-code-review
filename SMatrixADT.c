@@ -240,6 +240,7 @@ int SMTX_subtract(SMatrixType A[], SMatrixType B[], SMatrixType C[])
             j++;
         }
         else if (A->R[i].row < B->R[j].row ||(A->R[i].row == B->R[j].row && A->R[i].col < B->R[j].col))
+            // TODO
             C->R[k++] == A->R[i++];
         else
         {
