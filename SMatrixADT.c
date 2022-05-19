@@ -97,6 +97,7 @@ int main ()
         // TODO
         while (getchar() != '\n');
         // TODO
+        // TODO
         scanf ("%c", op);
     } /* while */
 
