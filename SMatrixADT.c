@@ -225,7 +225,8 @@ int SMTX_subtract(SMatrixType A[], SMatrixType B[], SMatrixType C[])
     C->R[0].row = row_B;
     C->R[0].col = col_B;
     int sum = 0;
-
+    
+    // TODO
     while (i <= A->R[0].value && j <= B->R[0].value)
     {
         if (A->R[i].row > B->R[j].row ||(A->R[i].row == B->R[j].row && A->R[i].col > B->R[j].col))
