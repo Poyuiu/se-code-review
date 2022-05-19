@@ -204,6 +204,7 @@ int SMTX_add(SMatrixType A[], SMatrixType B[], SMatrixType C[])
     C->R[0].row = A->R[0].row;
     C->R[0].col = A->R[0].col;
     C->R[0].value = k - 1;
+    // TODO 
 }
 
 int SMTX_subtract(SMatrixType A[], SMatrixType B[], SMatrixType C[])
