@@ -377,6 +377,7 @@ int SMTX_multiply(SMatrixType A[],SMatrixType B[],SMatrixType C[])
     C->R[0].row = A->R[0].row;
     C->R[0].col = A->R[0].col;
     C->R[0].value = k-1;
+    // TODO
 }
 
 
