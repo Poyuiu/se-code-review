@@ -53,6 +53,7 @@ int main ()
 
     /* Perform matrix operations */
     while (getchar() == '\n');
+    // TODO
     scanf ("%c", &op);
     while (op != DONE)
     {
