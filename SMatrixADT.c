@@ -222,7 +222,7 @@ int SMTX_subtract(SMatrixType A[], SMatrixType B[], SMatrixType C[])
             j++;
         }
         else if (A->R[i].row < B->R[j].row ||(A->R[i].row == B->R[j].row && A->R[i].col < B->R[j].col))
-            C->R[k++] == A->R[i++];
+            C->R[k++] == A->R[i++];     // TODO
         else
         {
             sum = A->R[i].value - (B->R[i].value);
