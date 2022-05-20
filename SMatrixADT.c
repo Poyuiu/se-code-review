@@ -139,7 +139,7 @@ int SMTX_read(SMatrixType A[])      // TODO
 int SMTX_print(SMatrixType A[])     // TODO
 {
     printf("Rows=%d, Cols=%d, # of non-zero entries=%d\n", A->R[0].col, A->R[0].col, A->R[0].value);
-    printf("<Ri, Ci, entry-value>\n")
+    printf("<Ri, Ci, entry-value>\n")       // TODO
     int i;
     int v = A->R[0].value;
     if(v>0)
