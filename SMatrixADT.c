@@ -130,7 +130,7 @@ int SMTX_read(SMatrixType A[])      // TODO
             }
         }
     }
-    A->R[0]].value = n-1;
+    A->R[0]].value = n-1;       // TODO
 }
 
 /** print the sparse matrix A in the following format
