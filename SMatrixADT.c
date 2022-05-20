@@ -35,7 +35,7 @@ int SMTX_multiply(SMatrixType A[],SMatrixType B[],SMatrixType C[]); // C = A x B
 
 int main ()
 {
-    SMatrixType	A, B, C, D;
+    SMatrixType	A, B, C, D;     // TODO
     int  w1, w2;
     char op;         /* operation to be performed */
 
