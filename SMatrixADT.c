@@ -136,7 +136,7 @@ int SMTX_read(SMatrixType A[])      // TODO
 /** print the sparse matrix A in the following format
     Line 1: print"Rows = ??, Cols = ??, # of non-zero entries = ??"
     Line 2 ~ ??: print "<Ri, Ci, entry-value>," one 3-tuple per line.**/
-int SMTX_print(SMatrixType A[])
+int SMTX_print(SMatrixType A[])     // TODO
 {
     printf("Rows=%d, Cols=%d, # of non-zero entries=%d\n", A->R[0].col, A->R[0].col, A->R[0].value);
     printf("<Ri, Ci, entry-value>\n")
