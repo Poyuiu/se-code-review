@@ -294,7 +294,7 @@ int SMTX_multiply(SMatrixType A[],SMatrixType B[],SMatrixType C[])
     int col_B = B->R[0].col;
     SMatrixType new_B[MAX_SMTX_SIZE];
 
-    if(col_a != B->R[0].row)
+    if(col_a != B->R[0].row)        // TODO
     {
         return SMTX_ERROR;
     }
