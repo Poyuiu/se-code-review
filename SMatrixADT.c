@@ -105,7 +105,7 @@ int main ()
     Line 1: two integers, rows & cols, dimension the matrix
     Line 2 to Line rows+1: contains cols number of integers
 Should take the input and convert to your proper ADT format.**/
-int SMTX_read(SMatrixType A[])
+int SMTX_read(SMatrixType A[])      // TODO
 {
     int r=0, l=0;
     scanf("%d %d", &r ,&l);
