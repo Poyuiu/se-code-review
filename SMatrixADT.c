@@ -94,7 +94,7 @@ int main ()
         SMTX_print (&C);
 
         while (getchar() != '\n');      // TODO
-        scanf ("%c", op);
+        scanf ("%c", op);       // TODO
     } /* while */
 
     /** you should do more testing than the above **/
